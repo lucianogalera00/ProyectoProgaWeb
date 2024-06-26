@@ -8,12 +8,11 @@ export default function Registro({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.registerContainer}>
-      <Text>{"\n"}</Text>
-      <Text>{"\n"}</Text>
+     
       <Text style={styles.titulo}>Registrate</Text>
-      <Text>{"\n"}</Text>
+      
       <Text style={styles.letra}>Datos personales</Text>
-      <Text>{"\n"}</Text>
+      
       <Text style={styles.letra}>Nombre completo</Text>
       <Input/>
       <Text style={styles.letra}>Número de telefono</Text>
@@ -23,7 +22,7 @@ export default function Registro({ navigation }) {
       <Text style={styles.letra}>Contraseña</Text>
       <Input/>
       <Text style={styles.letra}>Ya estas registrado?
-      <Pressable style={styles.registro} onPress={() => navigation.navigate('Login')}> Inicia Sesion</Pressable>
+      <Pressable style={styles.registro} onPress={() => navigation.navigate('login')}> Inicia Sesion</Pressable>
       </Text>
       <Boton/>
       </View>
@@ -61,7 +60,7 @@ const styles = StyleSheet.create({
   },
 registro: {
   textDecorationLine: 'underline',
-  color: "orange",
+  color: "blue",
   
 },
 });
